@@ -1,0 +1,12 @@
+{
+    "editor.fontSize": 17,
+    "sync.gist": "e55f9aa3418fcce16062a9e00cd8273f",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "sync.autoUpload": true,
+    "better-comments.highlightPlainText": true,
+    "cSpell.words": [
+        "drapdownmenu",
+        "hoverbox",
+        "submenu"
+    ]
+}

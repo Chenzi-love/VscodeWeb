@@ -1,0 +1,82 @@
+/* 程序的名称：level12-menu 
+    作用对象：homework 7-5.html*/
+
+/* 定义外层样式 */
+#menu {
+    padding-left: 100px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background: #55aaee;
+    border: 1px solid #333;
+}
+ /* 考虑不同浏览器的兼容性 */
+ #menu ul{
+     padding: 0px;
+     margin: 0px;
+ }
+/* 定义存放子菜单的图层样式 */
+ .submenu{
+     width: 900px;
+     height: 28px;
+     text-align: center;
+ }
+ /* 定义主菜单下的样式 */
+#menu ul li{
+    display: inline;
+    height: 30px;
+    width: 115px;
+    list-style: none;
+    float: left;
+    font: 0.9em Arial, Helvetica, sans-serif; 
+    text-align: center;
+}
+/* 定义超链接的样式 */
+ul li a{
+    display: block;
+    width: 114px;
+    margin: 0px;
+    padding: 0px 0px 0px 8px;
+    text-decoration: none;
+    background: #55a0ff;
+    line-height: 29px;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+}
+/* 定义子菜单的样式 */
+ul li .submenu ul li{
+    height: 25px;
+}
+/* 定义子菜单中超链接的样式 */
+ul li .submenu ul li a{
+    background: #55aaee;
+    line-height: 24px;
+}
+/* 定义鼠标滑过主菜单时的样式 */
+ul li a:hover{
+    background: #666;
+    border: 1px dashed #ff0000;
+}
+/* 初始化二级菜单不显示 */
+ul li .submenu{
+    display: none;
+}
+/* 设置二级菜单的样式 */
+.submenu ul li{
+    display: inline;
+    width: 113px;
+    height: 24px;
+    list-style: none;
+    float: left;
+    font: 0.8em Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/* 鼠标滑过一级菜单时显示子菜单 */
+ul li:hover .submenu{
+    display: block;
+}
+/* 鼠标滑过子菜单时的颜色 */
+ul li .submenu ul li a:hover{
+    background: #333;
+}

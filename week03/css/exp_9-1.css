@@ -1,0 +1,60 @@
+/* 清楚浏览器默认样式 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    text-align: center;
+}
+
+p{
+    font-family: 隶书;
+    font-size: 24px;
+    text-align: center;
+    margin: 2px;
+    /* 设置字符间距 */
+    letter-spacing: 0.5em;
+   /* 设置行高 */
+   line-height: 1.5em;
+}
+
+#wrap {
+    width: 900px;
+    margin: 0 auto;
+    border: 2px solid red;
+    margin-top: 5px;
+}
+
+#pic {
+    width: 420px;
+    height: 300px;
+    /* 记得加入url（）函数，才可以输入地址 */
+    background-image: url(../img/ex9.jpg);
+    /* 背景图片不重复填充 */
+    background-repeat: no-repeat;
+    text-align: center;
+    /* 允许图像向左浮动 */
+    float: left;
+    background-color: #77a;
+}
+
+#text {
+    background-image: url(../img/ex9.jpg);
+    float: right;
+    width: 420px;
+    height: 500px;
+    background-color: #77a;
+    padding: 10px;
+    font-weight: bold;
+}
+#title{
+    font-family: 华文彩云;
+    font-size: 32px;
+}
+#author{
+    font-family: 黑体;
+    font-size: 12px;
+    text-align: right;
+    margin-bottom: 24px;
+}

@@ -1,0 +1,69 @@
+/* 设计ul样式，边距、填充都设置为0
+    考虑不同浏览器的兼容性 */
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 定义列表样式 */
+ul li {
+    height: 30px;
+    width: 115px;
+    list-style: none;
+    float: left;
+    display: inline;
+    /* 设置为行元素 */
+    font: 0.9em Arial, Helvetica sans-serif;
+}
+
+/* 定义超链接的样式 该条规则是加上背景和菜单间的隔离线 */
+ul li a {
+    color: #fff;
+    display: block;
+    width: 113px;
+    margin: 0px;
+    padding: 0px 0px 0px 8px;
+    text-decoration: none;
+    background: #808080;
+    line-height: 29px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    /* solid表示实线 */
+}
+
+/* 二级导航样式 */
+ul li ul li {
+    height: 25px;
+}
+
+/* 定义嵌套子li中的a标签的样式 */
+ul li ul li a {
+    background: #666;
+    /* 注意：#666666等于#666 */
+    line-height: 24px;
+}
+
+/* 鼠标滑过导航时的样式 */
+ul li a:hover {
+    background: #666;
+    border-bottom: 1px dashed #ff0000;
+    /* dashed表示虚线 */
+}
+
+/* 定义子菜单初始状态为隐藏 */
+ul li ul {
+    display: none;
+    /* 或者visibility:hidden */
+}
+
+/* 定义鼠标滑过父菜单时显示子菜单 */
+ul li:hover ul {
+    display: block;
+    /* 或者visibility:visible */
+}
+
+/* 定义鼠标滑过二级菜单时的样式 */
+ul li ul li a:hover {
+    background: #333;
+    /* 同理#333也等同于#333333 */
+}
